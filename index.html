@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="doc-title">Pest Control Solutions in Grimsby | Professional Pest Management</title>
+    <meta id="doc-desc" name="description" content="Leading pest control solutions in Grimsby. Safe, effective, and guaranteed removal of rats, mice, wasps, and commercial pests for homes and businesses.">
+    <style>
+        /* CSS RESET & VARIABLES */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-light: #f4f8f5;
+            --surface-white: #ffffff;
+            --primary-green: #2e7d32;
+            --primary-light: #e8f5e9;
+            --accent-green: #4caf50;
+            --text-dark: #1c2826;
+            --text-muted: #5a6b65;
+            --border-light: rgba(46, 125, 50, 0.12);
+            --glass-bg: rgba(255, 255, 255, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --shadow-subtle: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            --radius-lg: 20px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        body {
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* GLASSMORPHISM & APPLE-STYLE UI */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-subtle);
+            border-radius: var(--radius-lg);
+        }
+
+        .glass-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(244, 248, 245, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+        }
+
+        /* LAYOUT & CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            padding: 16px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--primary-green);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-green);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            box-shadow: 0 4px 14px rgba(46, 125, 50, 0.25);
+        }
+
+        .cta-btn:hover {
+            background-color: #236326;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.35);
+        }
+
+        .cta-btn-secondary {
+            background-color: transparent;
+            color: var(--primary-green);
+            border: 1px solid var(--primary-green);
+            padding: 10px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-btn-secondary:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* PAGE VIEWS (SPA ROUTING EFFECT) */
+        .page-view {
+            display: none;
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            padding: 40px 0 80px 0;
+            flex: 1;
+        }
+
+        .page-view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 60px 0 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: var(--primary-light);
+            color: var(--primary-green);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto 36px auto;
+            font-weight: 400;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        /* GRID SYSTEMS */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        /* CARDS & SECTIONS */
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--surface-white);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            border: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(46, 125, 50, 0.08);
+            border-color: rgba(46, 125, 50, 0.3);
+        }
+
+        .card-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: var(--primary-light);
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* STATS BAR */
+        .stats-bar {
+            margin: 60px 0;
+            padding: 32px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            background: var(--surface-white);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            font-weight: 800;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial-card {
+            background: var(--surface-white);
+            padding: 28px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            font-size: 0.98rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--primary-green);
+        }
+
+        .testimonial-location {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ARTICLE & BLOG STYLES */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .blog-card {
+            background: var(--surface-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+        }
+
+        .blog-card-body {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .blog-card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .blog-card h3 {
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .blog-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .read-more {
+            color: var(--primary-green);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE SINGLE VIEW */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--surface-white);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .article-container h1 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--text-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .article-container h2 {
+            font-size: 1.6rem;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            color: var(--primary-green);
+            letter-spacing: -0.3px;
+        }
+
+        .article-container h3 {
+            font-size: 1.25rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .article-container p {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: #33413d;
+            margin-bottom: 20px;
+        }
+
+        .article-container ul, .article-container ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-container li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+            color: #33413d;
+        }
+
+        .article-container a {
+            color: var(--primary-green);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .faq-section {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 2px dashed var(--border-light);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: var(--radius-md);
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--primary-green);
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* FORM STYLES */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--surface-white);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid #d1ded6;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition-smooth);
+            background: #fafdfb;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+            background: #fff;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .success-message {
+            display: none;
+            background: var(--primary-light);
+            color: var(--primary-green);
+            padding: 16px;
+            border-radius: var(--radius-sm);
+            text-align: center;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #152219;
+            color: #d1ded6;
+            padding: 60px 0 30px 0;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: #a3b8ac;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #a3b8ac;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #7a9183;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .grid-2, .grid-3, .grid-4, .blog-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.05rem;
+            }
+            .stats-bar {
+                flex-direction: column;
+                gap: 24px;
+            }
+            .article-container {
+                padding: 24px;
+            }
+            .nav-links {
+                display: none; /* Simplification for small screen demo */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="glass-nav">
+        <div class="container nav-wrapper">
+            <a href="#home" onclick="navigate('home')" class="logo">
+                <span class="logo-icon">✓</span> Grimsby Pest Solutions
+            </a>
+            <ul class="nav-links">
+                <li><a id="nav-home" onclick="navigate('home')" class="active">Home</a></li>
+                <li><a id="nav-service" onclick="navigate('service')">Services</a></li>
+                <li><a id="nav-about" onclick="navigate('about')">About Us</a></li>
+                <li><a id="nav-blog" onclick="navigate('blog')">Articles & Hub</a></li>
+                <li><a id="nav-contact" onclick="navigate('contact')">Contact</a></li>
+            </ul>
+            <button onclick="navigate('contact')" class="cta-btn">Get Inspection</button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- HOME PAGE -->
+        <section id="page-home" class="page-view active">
+            <div class="hero">
+                <span class="hero-badge">Professional & Eco-Friendly Management</span>
+                <h1>Reliable Pest Control Solutions in Grimsby</h1>
+                <p>Protecting residential properties, commercial establishments, and family environments with advanced, humane, and sustainable pest elimination protocols.</p>
+                <div class="hero-btns">
+                    <button onclick="navigate('contact')" class="cta-btn">Book Your Assessment</button>
+                    <button onclick="navigate('service')" class="cta-btn-secondary">Explore Services</button>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Guaranteed Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3>12+</h3>
+                    <p>Years Local Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Emergency Response</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2>Comprehensive Protection Services</h2>
+                <p>Tailored treatments designed specifically for Grimsby's micro-climates and architectural structural dynamics.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🐀</div>
+                    <h3>Rodent Control</h3>
+                    <p>Complete extermination and structural exclusion of rats and mice using smart tracking and non-toxic interior barrier systems.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐝</div>
+                    <h3>Wasp & Hornet Eradication</h3>
+                    <p>Safe removal of high-risk stinging insect nests with zero structural impact to your rooflines, eaves, or yard areas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Commercial Pest Protocols</h3>
+                    <p>Discreet, fully compliant audit-ready pest management programs custom-engineered for local Grimsby commercial facilities.</p>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 80px;">
+                <h2>What Local Property Owners Say</h2>
+                <p>Read authentic feedback from nearby homeowners and local property managers.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="testimonial-card glass-panel">
+                    <p class="testimonial-text">"When wasps nested under our backyard deck in Grimsby, the team was on-site within hours. Professional, safe, and incredibly polite throughout."</p>
+                    <div class="testimonial-author">M. Henderson</div>
+                    <div class="testimonial-location">Grimsby Resident</div>
+                </div>
+                <div class="testimonial-card glass-panel">
+                    <p class="testimonial-text">"We manage commercial properties near Etobicoke and Grimsby, and finding a reliable, thorough pest management provider was tough until we found this service. Absolutely top tier."</p>
+                    <div class="testimonial-author">David Miller</div>
+                    <div class="testimonial-location">Etobicoke Property Manager</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE PAGE -->
+        <section id="page-service" class="page-view">
+            <div class="hero">
+                <span class="hero-badge">Specialized Services</span>
+                <h1>Advanced Pest Control Solutions in Grimsby</h1>
+                <p>Precision-targeted removal, continuous defense, and structural sealing customized for every home or building type.</p>
+            </div>
+
+            <div class="grid-2" style="margin-bottom: 60px;">
+                <div class="card">
+                    <h3>Residential Defense Systems</h3>
+                    <p>Your sanctuary should be free from unseen health hazards. Our residential programs address structural vulnerabilities, sealing foundational gaps, chimney openings, and exterior air vents while clearing out unwanted pest populations completely.</p>
+                </div>
+                <div class="card">
+                    <h3>Commercial Compliance & Safety</h3>
+                    <p>Pest issues can devastate business reputations and invite strict regulatory fines. We deliver detailed digital logging, proactive monitoring stations, and non-disruptive treatments tailored to local food service, retail, and office settings.</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2>Our Step-by-Step Defense Process</h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3>Inspection</h3>
+                    <p>Comprehensive interior and exterior evaluation to identify pest points of entry and nest sites.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3>Target Treatment</h3>
+                    <p>Application of botanical or low-toxicity targeted remedies suited to your family and pets.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3>Exclusion</h3>
+                    <p>Professional sealing of entryways, masonry gaps, and utility pipe penetrations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3>Monitoring</h3>
+                    <p>Follow-up visits and continuous monitoring to guarantee long-term pest-free security.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="page-about" class="page-view">
+            <div class="hero">
+                <span class="hero-badge">Our Mission</span>
+                <h1>Protecting Homes & Local Ecosystems</h1>
+                <p>Delivering high-performance, humane, and sustainable pest solutions for modern community living.</p>
+            </div>
+
+            <div class="article-container">
+                <h2>Dedicated to Modern Property Protection</h2>
+                <p>Founded on the core principle that pest control must be scientifically grounded, safe for urban wildlife, and minimally intrusive for property owners, our organization has grown into a premier authority for property defense across the region.</p>
+                
+                <h2>Integrated Pest Management (IPM) Philosophy</h2>
+                <p>We do not rely on aggressive, indiscriminate chemical spraying. Instead, our methodology centers around Integrated Pest Management (IPM). By analyzing pest behavior, seasonal dynamics, and local building construction styles, we eliminate pests by addressing the root causes of infestations—eliminating access to food, water, and shelter.</p>
+
+                <h2>Environmental Responsibility</h2>
+                <p>Every product we utilize is chosen with indoor air quality and ecological footprints in mind. Our goal is simple: deliver complete relief from nuisance pests while keeping family members, pets, and beneficial local pollinators entirely safe.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="page-contact" class="page-view">
+            <div class="hero">
+                <span class="hero-badge">Get In Touch</span>
+                <h1>Request an Assessment</h1>
+                <p>Fill out the form below and an technical expert will respond promptly to address your inquiry.</p>
+            </div>
+
+            <div class="contact-form">
+                <form id="pest-contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="(905) 555-0199" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message / Details of Issue</label>
+                        <textarea id="message" class="form-control" placeholder="Describe your pest concern or structural inspection request..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn" style="width: 100%;">Submit Consultation Request</button>
+                </form>
+                <div id="form-success" class="success-message">
+                    Thank you! Your request has been securely submitted. A team member will follow up with you shortly.
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG INDEX PAGE -->
+        <section id="page-blog" class="page-view">
+            <div class="hero">
+                <span class="hero-badge">Knowledge Hub</span>
+                <h1>Pest Management & Prevention Insights</h1>
+                <p>Expert articles, educational guides, and seasonal tips to help you protect your real estate investments.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Main Feature Guide</span>
+                        <h3>Effective Pest Control Solutions for Grimsby Properties</h3>
+                        <p>Explore master strategies for maintaining pest-free residential and commercial properties using cutting-edge exclusion methods.</p>
+                        <a onclick="navigate('art-main')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Rodent Control</span>
+                        <h3>Rat Control in Grimsby</h3>
+                        <p>Learn structural identification methods and tactical eradication measures to defend your property against aggressive rat populations.</p>
+                        <a onclick="navigate('art-rat')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Home Prevention</span>
+                        <h3>Mouse Prevention for Grimsby Homes</h3>
+                        <p>Practical home maintenance check-lists and barrier setup procedures designed to stop mice before they enter living spaces.</p>
+                        <a onclick="navigate('art-mouse')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Commercial Focus</span>
+                        <h3>Commercial Pest Control in Grimsby</h3>
+                        <p>Comprehensive regulatory and sanitation operational protocols tailored specifically for business facilities and enterprise properties.</p>
+                        <a onclick="navigate('art-commercial')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Exclusion & Defense</span>
+                        <h3>How to Prevent Rats and Mice From Entering Your Grimsby Home</h3>
+                        <p>A deep dive into structural exclusion, foundation sealing, and perimeter defense measures for long-term rodent control.</p>
+                        <a onclick="navigate('art-prevent-rodents')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">Stinging Insects</span>
+                        <h3>Wasp Control in Grimsby</h3>
+                        <p>Safe identification, seasonal behavior analysis, and professional removal methods for active stinging insect nests.</p>
+                        <a onclick="navigate('art-wasp')" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTICLE 1: MAIN ARTICLE -->
+        <article id="page-art-main" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Property Care Series</span> • <span>Reading Time: 6 min</span>
+                </div>
+                <h1>Effective Pest Control Solutions for Grimsby Properties</h1>
+
+                <p>Maintaining a safe, structurally sound, and hygienic home or commercial space requires a proactive strategy toward environmental pest management. Properties situated along coastal regions, urban-suburban interfaces, and agricultural borders experience distinct seasonal wildlife pressure. Implementing <a href="https://jarpests.com/">Pest Control Solutions in Grimsby</a> provides home and property owners with a reliable, long-term framework for eliminating structural infestations, protecting interior air quality, and preserving building foundations.</p>
+
+                <h2>Understanding Local Pest Vulnerabilities in Grimsby</h2>
+                <p>Every region presents unique environmental factors that encourage pest proliferation. In Grimsby, the combination of lakefront humidity, rich soil beds, and mixed architectural styles creates favorable conditions for unwanted invaders. From subterranean rodents seeking autumn warmth to stinging insects nesting in soffits during summer, properties are constantly targeted by biological forces.</p>
+                <p>Without ongoing defense mechanisms, minor entry points—such as unsealed weep holes, weathered door sweeps, or degraded chimney flashing—become open pathways for structural intrusion. Recognizing these vulnerabilities early allows property owners to block entry points before a localized pest issue turns into an expensive structural infestation.</p>
+
+                <h2>The Integrated Pest Management (IPM) Advantage</h2>
+                <p>Modern pest management has moved away from chemical-heavy treatments. Instead, professional extermination strategies utilize Integrated Pest Management (IPM), a methodology focused on long-term prevention through biological, structural, and environmental adjustments.</p>
+                <p>IPM minimizes risk by combining strategic inspection protocols, habitat reduction, and structural exclusion. When environmental factors—such as exterior standing water, exposed garbage, or dense ground-cover vegetation—are corrected, pest populations naturally drop without introducing aggressive toxins into living areas.</p>
+
+                <h2>Seasonal Defense Strategies for Residential Buildings</h2>
+                <p>Effective defense requires adapting your maintenance routines as seasons change:</p>
+                <ul>
+                    <li><strong>Spring Renewal:</strong> Inspect rooflines, trim back overhanging tree branches, and clear out gutter blockages that collect standing water and attract wasps or ants.</li>
+                    <li><strong>Summer Vigilance:</strong> Screen open vents, seal gaps around outdoor HVAC installations, and maintain clean outdoor cooking zones to prevent insect colonies from expanding.</li>
+                    <li><strong>Autumn Exclusion:</strong> As temperatures drop, rodents actively search for interior thermal warmth. Check brickwork, foundation cracks, and garage garage door seals thoroughly. Learn more about tactical rodent exclusion in our guide on <a onclick="navigate('art-mouse')">Mouse Prevention for Grimsby Homes</a>.</li>
+                    <li><strong>Winter Safeguarding:</strong> Monitor dark, rarely visited indoor areas like basements, cold cellars, and attics for early signs of rodent nesting or chewed utility wiring.</li>
+                </ul>
+
+                <h2>Protecting Structural and Health Integrity</h2>
+                <p>Pests are more than just a nuisance; they pose serious health and structural risks. Rodents chew through electrical insulation, creating fire hazards, while their droppings contaminate indoor air with allergens and airborne pathogens. Insect colonies, such as carpenter ants or wasps, can cause lasting wood damage or create safety hazards for children and pets.</p>
+                <p>By using professional sealing materials—like industrial copper mesh, heavy-gauge galvanized steel hardware cloth, and specialized elastomeric sealants—property owners can create an impenetrable physical shield around their homes.</p>
+
+                <h2>Commercial Property Considerations</h2>
+                <p>Commercial enterprises in Grimsby face unique challenges. A single pest sighting in a commercial setting can harm customer trust, damage brand reputation, and lead to regulatory fines. To discover detailed management protocols for retail, corporate, or industrial settings, review our dedicated resource on <a onclick="navigate('art-commercial')">Commercial Pest Control in Grimsby</a>.</p>
+
+                <h2>Conclusion</h2>
+                <p>Securing a building against pest intrusion requires clear dynamic assessment, structural reinforcement, and timely intervention. By shifting from reactive treatments to proactive, long-term exclusion strategies, property owners in Grimsby can enjoy clean, comfortable, and safe living space year-round.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>How often should a home undergo professional pest inspection?</h3>
+                        <p>It is best practice to perform professional inspections twice a year—ideally during spring and early autumn—to spot potential vulnerabilities before seasonal weather shifts prompt pests to head indoors.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are modern pest control treatments safe for pets and children?</h3>
+                        <p>Yes. Contemporary Integrated Pest Management utilizes low-toxicity, targeted, and eco-friendly products that prioritize human and pet safety when applied by qualified professionals.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can structural exclusion alone solve an active infestation?</h3>
+                        <p>Exclusion prevents new pests from entering, but active indoor populations must first be removed using targeted trapping and eradication methods before entry points are sealed permanently.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ARTICLE 2: RAT CONTROL -->
+        <article id="page-art-rat" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Rodent Series</span> • <span>Reading Time: 5 min</span>
+                </div>
+                <h1>Rat Control in Grimsby</h1>
+
+                <p>Norway rats and roof rats are among the most persistent urban pests. Equipped with powerful jaws capable of chewing through wood, plastic, and soft metals, these rodents pose severe structural threats to homes and commercial properties. Achieving definitive, permanent rat control in Grimsby requires a clear understanding of rodent biology, structural entry points, and strategic removal methods.</p>
+
+                <h2>Identifying Rat Infestations Early</h2>
+                <p>Because rats are nocturnal and cautious by nature, property owners often notice sign of an infestation before seeing an actual rat. Recognizing these subtle indicators early helps catch structural incursions before colonies expand:</p>
+                <ul>
+                    <li><strong>Grease Marks:</strong> Dark, oily rub marks left along baseboards, walls, and structural beams caused by oily fur as rats move along established pathways.</li>
+                    <li><strong>Droppings:</strong> Dark, capsule-shaped droppings measuring roughly 12mm to 20mm in length, typically concentrated near food sources or nesting areas.</li>
+                    <li><strong>Gnaw Marks:</strong> Freshly chewed wood, vinyl siding, PVC piping, or wiring insulation along lower floor levels and foundation footings.</li>
+                    <li><strong>Unusual Sounds:</strong> Scurrying, clawing, or squeaking noises heard inside walls, subfloors, or attic spaces during late-night hours.</li>
+                </ul>
+
+                <h2>Health Risks Associated with Rat Intrusions</h2>
+                <p>Rats carry vectors for diseases, including Leptospirosis, Hantavirus, and Salmonella. Biological waste dries over time, breaking down into micro-particles that circulate through home HVAC ductwork. Additionally, rats transport ectoparasites like fleas, ticks, and mites into residential spaces, introducing secondary pest issues to household residents.</p>
+
+                <h2>Strategic Extermination and Removal Protocols</h2>
+                <p>Rats are naturally suspicious of new items introduced into their environment—a trait known as neophobia. Simple, uncalibrated trapping often fails because rats quickly learn to avoid basic traps. Effective eradication relies on an integrated approach:</p>
+                <p>First, environmental food sources must be secured. Keep outdoor trash containers tightly sealed, clean up fallen garden fruit, and remove bird feeders that drop seeds onto the ground. Second, professional snap trapping and smart monitoring stations should be positioned along high-traffic scent pathways.</p>
+                <p>To prevent future infestations, traps must be paired with complete physical sealing. For detailed steps on securing structural weak points, see our guide on <a onclick="navigate('art-prevent-rodents')">How to Prevent Rats and Mice From Entering Your Grimsby Home</a>.</p>
+
+                <h2>Long-Term Defense and Maintenance</h2>
+                <p>Eliminating active rats from inside a structure is only step one. Lasting defense requires maintaining a clean perimeter clear of dense brush, firewood piles, or standing debris near foundation walls. Regular property checks help identify new settling cracks before rodents exploit them.</p>
+
+                <h2>Conclusion</h2>
+                <p>Rat infestations require immediate, methodical, and well-structured intervention. Combining clean sanitation practices with professional trapping and structural sealing provides complete protection against stubborn rodent populations.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>Why are rats so difficult to catch with simple grocery-store traps?</h3>
+                        <p>Rats exhibit strong neophobia (fear of new objects). If a trap is improperly positioned or smells of human contact, rats will simply bypass it entirely.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can rats enter homes through plumbing systems?</h3>
+                        <p>Yes. Norway rats are exceptional swimmers and can travel through broken sewer lines, municipal drainage systems, and unsealed floor drains into properties.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How small of a hole can a full-grown rat squeeze through?</h3>
+                        <p>An adult rat can squeeze through any opening larger than 20mm (roughly the size of a quarter) by compressing its ribcage.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ARTICLE 3: MOUSE PREVENTION -->
+        <article id="page-art-mouse" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Home Defense Series</span> • <span>Reading Time: 5 min</span>
+                </div>
+                <h1>Mouse Prevention for Grimsby Homes</h1>
+
+                <p>House mice are incredibly adaptable creatures. Able to slip through openings as small as a dime, these nimble rodents can quietly establish breeding colonies inside insulation, wall cavities, and under kitchen cabinets long before homeowners spot them. Protecting your home requires a disciplined, step-by-step exclusion and prevention plan.</p>
+
+                <h2>Understanding Mouse Behavior</h2>
+                <p>Unlike larger rats, mice are curious exploratory foragers. A single mouse explores its territory daily, nibbling on food sources and leaving behind scent tracks for other mice to follow. Because female mice produce up to 10 litters a year, a minor mouse issue can quickly scale into a widespread indoor infestation if left unchecked.</p>
+
+                <h2>Indoor Risk Factors and Attractants</h2>
+                <p>Mice enter homes in search of three primary resources: warm shelter, food crumbs, and soft nesting material. Simple household oversights create prime conditions for mouse activity:</p>
+                <ul>
+                    <li>Unsealed grain, pet food, or snack bags stored in low pantry drawers.</li>
+                    <li>Accumulated appliance grease beneath stoves and behind refrigerators.</li>
+                    <li>Exposed cardboard boxes, newspaper stacks, or fiberglass insulation stored in dark basement corners.</li>
+                </ul>
+
+                <h2>Essential Exterior Prevention Checklist</h2>
+                <p>Keeping mice out starts around your home's exterior boundary. Work through this practical checklist each fall to secure your property:</p>
+                <ol>
+                    <li><strong>Weep Hole Protection:</strong> Insert specialized stainless steel weep hole covers along exterior brick walls to block entry while preserving proper structural ventilation.</li>
+                    <li><strong>Door Sweeps:</strong> Install heavy-duty nylon brush or reinforced rubber door sweeps along all exterior doors, including garage access doors.</li>
+                    <li><strong>Utility Penetrations:</strong> Fill gaps around air conditioning lines, gas pipes, and electrical conduit using copper mesh and silicone sealants.</li>
+                    <li><strong>Vegetation Management:</strong> Maintain a 12-inch clear zone between foundation walls and garden mulch, shrubs, or climbing vines.</li>
+                </ol>
+
+                <p>Properties dealing with recurring rodent pressure often benefit from coordinated, professional eradication programs. Read our overview on <a onclick="navigate('art-rat')">Rat Control in Grimsby</a> for additional insight into managing mixed rodent infestations effectively.</p>
+
+                <h2>Conclusion</h2>
+                <p>Preventing mouse infestations requires consistent home maintenance, proper food storage, and tight structural sealing. By removing indoor attractants and blocking tiny entry pathways early, you can keep your home safe, clean, and rodent-free throughout the year.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>How can I tell if I have mice or rats in my home?</h3>
+                        <p>Mouse droppings are small (3-6mm) with pointed ends, whereas rat droppings are much larger (12-20mm) with blunt ends. Mice also leave smaller chew marks and tend to nest in higher indoor locations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is expand-a-foam sealant enough to block mice?</h3>
+                        <p>No. Mice can easily chew through standard expanding spray foam. Always pack openings with steel or copper mesh before applying expandable foam compounds over top.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are ultrasonic pest repellents effective against mice?</h3>
+                        <p>Ultrasonic devices provide minimal, short-term deterrent value at best. Mice quickly adjust to the noise, making physical exclusion and trapping far more effective long term.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ARTICLE 4: COMMERCIAL PEST CONTROL -->
+        <article id="page-art-commercial" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Commercial Hub</span> • <span>Reading Time: 5 min</span>
+                </div>
+                <h1>Commercial Pest Control in Grimsby</h1>
+
+                <p>For commercial facilities—such as restaurants, retail centers, medical clinics, and warehousing complexes—pest management is an essential business necessity. An unaddressed pest outbreak can lead to regulatory fines, failed health inspections, inventory destruction, and severe brand damage. Professional commercial pest control in Grimsby provides companies with modern, audit-ready defense protocols custom-fit to modern corporate and industrial standards.</p>
+
+                <h2>Unique Commercial Exposure Points</h2>
+                <p>Commercial buildings experience high foot traffic, daily inventory shipments, and large-scale waste generation—all of which naturally attract opportunistic pests. Freight loading docks, drop-ceiling cavities, commercial kitchen drains, and trash compactor bays are constant high-risk hotspots for infestation.</p>
+
+                <h2>Industry-Specific Management Needs</h2>
+                <p>Different commercial sectors face distinct operational requirements:</p>
+                <ul>
+                    <li><strong>Food & Hospitality:</strong> Zero-tolerance environments requiring non-toxic pest monitoring, precise grease-trap sanitation, and discreet drain-fly management.</li>
+                    <li><strong>Warehousing & Distribution:</strong> Focused on structural rodent exclusion, pallet inspection, and bird deterrence along high roof trusses.</li>
+                    <li><strong>Office Infrastructure:</strong> Requires clean indoor air management, localized breakroom bug prevention, and discrete, off-hours service visits.</li>
+                </ul>
+
+                <h2>Regulatory Compliance and Documentation</h2>
+                <p>Modern commercial pest management relies heavily on digital tracking and precise documentation. Professional programs supply facilities managers with comprehensive compliance logs featuring service reports, pesticide usage records, floorplan mapping of bait stations, and corrective action recommendations required by government health inspectors.</p>
+
+                <p>Building managers maintaining large multi-use properties should review our central overview on <a onclick="navigate('art-main')">Effective Pest Control Solutions for Grimsby Properties</a> to seamlessly combine commercial protocols with surrounding site management.</p>
+
+                <h2>Conclusion</h2>
+                <p>Protecting commercial operations demands a proactive, fully documented strategy grounded in environmental hygiene and structural defense. Investing in regular, professional commercial pest control protects your facility, safeguards your bottom line, and preserves your hard-earned business reputation.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>Can commercial pest treatments be scheduled outside of regular business hours?</h3>
+                        <p>Yes. Commercial pest programs routinely offer off-hours, weekend, or night appointments to ensure operations remain uninterrupted and completely discreet.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What documentation is required for official health inspections?</h3>
+                        <p>Health inspectors require up-to-date pest activity logs, detailed maps of interior/exterior monitoring stations, chemical safety data sheets (SDS), and technician credentials.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How often should commercial facilities receive pest monitoring?</h3>
+                        <p>Most commercial food, healthcare, and logistics facilities require monthly or bi-weekly service inspections to maintain optimal sanitation standards and regulatory compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ARTICLE 5: HOW TO PREVENT RATS AND MICE -->
+        <article id="page-art-prevent-rodents" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Exclusion Masterclass</span> • <span>Reading Time: 6 min</span>
+                </div>
+                <h1>How to Prevent Rats and Mice From Entering Your Grimsby Home</h1>
+
+                <p>Rodents are opportunistic invaders. As outdoor food becomes scarce and autumn temperatures fall, rats and mice actively seek warm structural entry points. Preventing them from taking over your living space requires systematically identifying structural weaknesses, applying proper sealant materials, and removing outdoor attractants. Follow this expert framework to safeguard your Grimsby home from rodent entry.</p>
+
+                <h2>1. Inspecting the Perimeter and Foundation</h2>
+                <p>Effective rodent exclusion starts with a thorough perimeter assessment. Walk around your home's foundation with a high-lumen flashlight, paying close attention to these structural weak points:</p>
+                <ul>
+                    <li><strong>Masonry Cracks:</strong> Foundation settling leads to hairline cracks that widen over time, creating easy entryways for small rodents.</li>
+                    <li><strong>Utility Entrances:</strong> Openings around outdoor plumbing lines, electrical conduit, and HVAC coolant lines are common entry routes.</li>
+                    <li><strong>Basement Window Frames:</strong> Rotted wood frames or loose window wells give rodents an easy path straight into your basement or crawlspace.</li>
+                </ul>
+
+                <h2>2. Selecting Professional-Grade Exclusion Materials</h2>
+                <p>Standard household materials like expanding foam, duct tape, or soft caulk are no match for sharp rodent teeth. Effective rodent proofing requires tough, durable materials:</p>
+                <ul>
+                    <li><strong>Galvanized Hardware Cloth:</strong> 1/4-inch heavy-gauge steel mesh is ideal for covering exterior foundation vents, chimney tops, and large openings.</li>
+                    <li><strong>Copper Mesh (Stuff-it):</strong> High-density woven metal mesh that won't rust or stain masonry, perfect for packing tight gaps and brick weep holes.</li>
+                    <li><strong>Polyurethane Sealant:</strong> High-grade exterior elastomeric caulking applied over metallic mesh barriers creates a weather-tight, chew-proof seal.</li>
+                </ul>
+
+                <h2>3. Eliminating Outdoor Attractants</h2>
+                <p>A rodent's decision to nest in your home is usually driven by nearby food and water sources. Cleaning up your yard significantly reduces rodent interest:</p>
+                <ol>
+                    <li>Keep compost heaps fully enclosed in rigid, latching bins.</li>
+                    <li>Store outdoor pet food in sealed galvanized steel containers rather than plastic bins.</li>
+                    <li>Prune tree branches back at least 6 feet from your roofline to block climbing roof rats and mice.</li>
+                    <li>Clear away woodpiles, yard debris, and stacked stone borders located directly against home foundation walls.</li>
+                </ol>
+
+                <p>If you encounter active, established infestations inside your home during the structural sealing process, consult our detailed resource on <a onclick="navigate('art-wasp')">Wasp Control in Grimsby</a> for broader insight into safely managing aggressive seasonal structural pests.</p>
+
+                <h2>Conclusion</h2>
+                <p>Securing your home against rodent entry requires durable materials, thorough inspections, and diligent property maintenance. By sealing foundational gaps, protecting utility lines, and removing outdoor food sources, you can build an impenetrable barrier that keeps rats and mice out for good.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>What is the single most common entry point for mice in brick homes?</h3>
+                        <p>Brick weep holes—the narrow vertical drainage gaps left open between bottom brick rows—are the primary entry point for mice unless covered with metal inserts.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can rats chew through thin sheet metal or aluminum flashing?</h3>
+                        <p>If sheet metal has loose edges or soft seams, rats can gnaw at them over time. Always use heavy-gauge, galvanized steel or thick aluminum flashing with tight seam closures.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Should I seal entry points while rodents are actively inside?</h3>
+                        <p>It is best to set indoor traps first to reduce the active population before sealing all exit paths. Sealing active pests inside can force them to chew through interior drywalls or die inside wall cavities.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ARTICLE 6: WASP CONTROL -->
+        <article id="page-art-wasp" class="page-view">
+            <div class="article-container">
+                <div class="article-meta">
+                    <span>Published: Seasonal Insect Guide</span> • <span>Reading Time: 5 min</span>
+                </div>
+                <h1>Wasp Control in Grimsby</h1>
+
+                <p>While paper wasps, yellowjackets, and hornets play an essential ecological role in controlling garden insects, having them nest near doorways, deck railings, or roof eaves poses serious safety risks. Stinging insects aggressively defend their nests, creating high-risk situations for children, pets, and individuals with venom allergies. Modern wasp control in Grimsby focuses on safe identification, targeted nest treatment, and seasonal prevention.</p>
+
+                <h2>Identifying Common Stinging Insects</h2>
+                <p>Choosing the right removal strategy starts with identifying the insect species involved:</p>
+                <ul>
+                    <li><strong>Paper Wasps:</strong> Slender insects with long legs that construct open, umbrella-shaped paper nests under roof overhangs and porch railings.</li>
+                    <li><strong>Yellowjackets:</strong> Highly aggressive, compact black-and-yellow insects that build covered paper nests inside wall voids, ground cavities, or thick shrubs.</li>
+                    <li><strong>Bald-Faced Hornets:</strong> Large, white-and-black insects that craft substantial egg-shaped paper nests high in trees, soffits, or barn rafters.</li>
+                </ul>
+
+                <h2>The Life Cycle of a Wasp Colony</h2>
+                <p>In early spring, fertilized queen wasps emerge from winter shelter in tree bark or wall spaces to build new nests. By mid-summer, a single nest can house thousands of active worker wasps. As autumn approaches, food becomes scarce, making yellowjackets particularly aggressive around outdoor dining areas and garbage bins.</p>
+
+                <h2>Safe Nest Removal Practices</h2>
+                <p>Attempting to knock down an active nest with water hoses or uncalibrated sprays often results in multiple painful stings and sends panicked wasps into surrounding living spaces. Safe professional protocols include:</p>
+                <ol>
+                    <li>Treating nests late in the evening or early in the morning when stinging insects are resting inside and activity levels are low.</li>
+                    <li>Utilizing specialized long-range application tools that apply targeted dusting agents or microencapsulated contact formulations directly into nest entryways.</li>
+                    <li>Waiting 24 to 48 hours for active returning foragers to absorb the treatment before physically removing and disposing of the nest structure.</li>
+                </ol>
+
+                <p>Proper seasonal control keeps your outdoor entertaining spaces safe. Combine wasp prevention with broader pest exclusion measures detailed in our master guide on <a onclick="navigate('art-prevent-rodents')">How to Prevent Rats and Mice From Entering Your Grimsby Home</a> to maintain complete control over your home's exterior.</p>
+
+                <h2>Conclusion</h2>
+                <p>Managing wasp and hornet hazards requires timely action, proper protective gear, and professional-grade treatment strategies. By identifying nests early in the season and securing your home's soffits and rooflines, you can enjoy a safe, sting-free outdoor environment all summer long.</p>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>Do wasp colonies reuse the same paper nest next year?</h3>
+                        <p>No. Wasp and yellowjacket colonies abandon their paper nests every autumn. Only newly fertilized queens survive winter, emerging in spring to construct brand new nests elsewhere.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What should I do if yellowjackets build a nest inside my wall cavity?</h3>
+                        <p>Never seal the exterior entry hole of a wall nest while it's active. Doing so forces thousands of yellowjackets to chew through interior drywall, escaping directly into your home's living areas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I prevent wasps from building nests under my deck?</h3>
+                        <p>Applying clear botanical oil repellents or sealing deck undersides with fine insect screening early in spring prevents queen wasps from attaching new nest starters.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Grimsby Pest Solutions</h3>
+                    <p>Providing safe, reliable, and sustainable pest management services across residential and commercial properties.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a onclick="navigate('home')">Home</a></li>
+                        <li><a onclick="navigate('service')">Services</a></li>
+                        <li><a onclick="navigate('about')">About Us</a></li>
+                        <li><a onclick="navigate('blog')">Articles & Hub</a></li>
+                        <li><a onclick="navigate('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Pest Knowledge</h4>
+                    <ul>
+                        <li><a onclick="navigate('art-main')">Pest Control Solutions</a></li>
+                        <li><a onclick="navigate('art-rat')">Rat Control</a></li>
+                        <li><a onclick="navigate('art-mouse')">Mouse Prevention</a></li>
+                        <li><a onclick="navigate('art-commercial')">Commercial Control</a></li>
+                        <li><a onclick="navigate('art-wasp')">Wasp Removal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <script>document.write(new Date().getFullYear())</script> Grimsby Pest Solutions. All rights reserved. Professional Web 2.0 Resource Hub.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT SPA ROUTER & CLIENT-SIDE LOGIC -->
+    <script>
+        // PAGE ROUTING SYSTEM
+        const pageTitles = {
+            'home': 'Pest Control Solutions in Grimsby | Professional Pest Management',
+            'service': 'Services | Pest Control Solutions in Grimsby',
+            'about': 'About Us | Professional Pest Control Solutions',
+            'contact': 'Contact Us | Pest Control Consultation',
+            'blog': 'Knowledge Hub | Pest Prevention & Control Articles',
+            'art-main': 'Effective Pest Control Solutions for Grimsby Properties',
+            'art-rat': 'Rat Control in Grimsby | Rodent Elimination',
+            'art-mouse': 'Mouse Prevention for Grimsby Homes | Home Security',
+            'art-commercial': 'Commercial Pest Control in Grimsby | Facility Solutions',
+            'art-prevent-rodents': 'How to Prevent Rats and Mice From Entering Your Grimsby Home',
+            'art-wasp': 'Wasp Control in Grimsby | Safe Nest Removal'
+        };
+
+        const pageDescs = {
+            'home': 'Leading pest control solutions in Grimsby. Safe, effective, and guaranteed removal of rats, mice, wasps, and commercial pests for homes and businesses.',
+            'service': 'Explore our pest control services in Grimsby, including residential exclusion, commercial auditing, and targeted pest elimination.',
+            'about': 'Learn about our mission, environmental standards, and commitment to safe, modern Integrated Pest Management.',
+            'contact': 'Get in touch with our expert team to schedule a pest inspection or request a professional treatment quote.',
+            'blog': 'Browse our comprehensive hub of articles covering rodent exclusion, wasp nest removal, and commercial property defense.',
+            'art-main': 'Master guide covering comprehensive pest control solutions for residential and commercial properties in Grimsby.',
+            'art-rat': 'Detailed extermination strategies and structural containment solutions for rat infestations in Grimsby.',
+            'art-mouse': 'Practical step-by-step home maintenance and exclusion methods to keep mice out of Grimsby houses.',
+            'art-commercial': 'Regulatory-compliant pest defense strategies designed specifically for commercial and retail buildings.',
+            'art-prevent-rodents': 'Comprehensive structural sealing, hardware cloth setup, and yard management tips for complete rodent exclusion.',
+            'art-wasp': 'Identify stinging insect risks, understand seasonal cycles, and safely eliminate wasp nests from your property.'
+        };
+
+        function navigate(pageId) {
+            // Hide all views
+            const views = document.querySelectorAll('.page-view');
+            views.forEach(v => v.classList.remove('active'));
+
+            // Show target view
+            const target = document.getElementById('page-' + pageId);
+            if (target) {
+                target.classList.add('active');
+            } else {
+                document.getElementById('page-home').classList.add('active');
+            }
+
+            // Update Navigation active state
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            const activeNav = document.getElementById('nav-' + pageId);
+            if (activeNav) {
+                activeNav.classList.add('active');
+            }
+
+            // Update Page Metadata dynamically
+            if (pageTitles[pageId]) {
+                document.getElementById('doc-title').innerText = pageTitles[pageId];
+            }
+            if (pageDescs[pageId]) {
+                document.getElementById('doc-desc').setAttribute('content', pageDescs[pageId]);
+            }
+
+            // Scroll to top cleanly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // FORM SUBMISSION HANDLER
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('pest-contact-form');
+            const successMsg = document.getElementById('form-success');
+            
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+        }
+
+        // INITIALIZATION
+        window.addEventListener('DOMContentLoaded', () => {
+            // Handle browser anchor navigation if present
+            const hash = window.location.hash.replace('#', '');
+            if (hash && pageTitles[hash]) {
+                navigate(hash);
+            } else {
+                navigate('home');
+            }
+        });
+    </script>
+</body>
+</html>
